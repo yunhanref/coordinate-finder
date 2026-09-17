@@ -1,3 +1,6 @@
+<img width="1280" height="688" alt="pygame_check" src="https://github.com/user-attachments/assets/f3c5d8a7-197d-4b10-824a-8eb98b8a0081" />
+<img width="604" height="159" alt="ss" src="https://github.com/user-attachments/assets/a0029a64-b556-49a4-bb2d-592cff0d4eae" />
+
 # Installation
 
 ---
