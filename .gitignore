@@ -1,0 +1,5 @@
+# Sanal ortam klasörünü yoksay
+venv/
+__pycache__/
+imgs/
+.vscode/
