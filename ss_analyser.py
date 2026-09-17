@@ -5,7 +5,7 @@ def find_red_dot():
     img = cv2.imread("imgs/pygame_check.png")
     
     if img is None:
-        print("Görsel yüklenemedi! Önce ekran görüntüsü aldığınızdan emin olun.")
+        print("No image.")
         return None
 
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -32,10 +32,10 @@ def find_red_dot():
                 cX = int(M["m10"] / M["m00"])
                 cY = int(M["m01"] / M["m00"])
                 
-                print(f"Kırmızı Nokta Tespit Edildi! Merkez Koordinatı: X={cX}, Y={cY}")
+                print(f"Red Dot: X={cX}, Y={cY}")
                 return (cX, cY)
 
-    print("Kırmızı nokta bulunamadı.")
+    print("Couldn't find red dot.")
     return None
 
 if __name__ == "__main__":
