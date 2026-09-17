@@ -25,7 +25,7 @@ terminal 1:
  python dots.py
 ```
 
-terminal2:
+terminal 2 (Coordinate results will get printed to terminal 2)
 ```
 python ss_analyser.py
 ```
