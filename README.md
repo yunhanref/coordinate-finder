@@ -12,7 +12,7 @@
 3) `ss_analyser.py` file analyses the image inside /imgs and finds coordinates of the the circle that has red color.
 
 
-# **-----Installation-----**
+# **📥 Installation**
 
 
 
@@ -32,17 +32,17 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-# **-----Running the Program-----**
+# **⚙️ Running the Program**
 
 ---
 
-**Terminal 1:**
+**Terminal 1:** ♚
 ```
  python dots.py
  ctrl + c to exit  
 ```
 
-**Terminal 2 (Coordinate results will get printed to terminal 2)**
+**Terminal 2 (Coordinate results will get printed to terminal 2)** ♛
 
 **NOTE:** Make sure you open the second terminal outside of the pygame window.
 ```
