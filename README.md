@@ -29,5 +29,6 @@ terminal 1:
 
 terminal 2 (Coordinate results will get printed to terminal 2)
 ```
+Make sure you open the second terminal outside of the pygame window.
 python ss_analyser.py
 ```
