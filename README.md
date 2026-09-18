@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ---
 
-**Terminal 1:** ♚
+**Terminal 1:** ♔
 ```
  python dots.py
  ctrl + c to exit  
