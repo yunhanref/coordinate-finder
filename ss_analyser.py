@@ -1,11 +1,12 @@
 import cv2
 import numpy as np
+import time  # 1. Zaman modülünü ekle
 
 def find_red_dot():
     img = cv2.imread("imgs/pygame_check.png")
     
     if img is None:
-        print("No image.")
+        # Sürekli döngüde dosyanın henüz oluşmadığı anlar olabilir, o yüzden print yerine pass/continue diyebiliriz
         return None
 
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -20,23 +21,24 @@ def find_red_dot():
     mask2 = cv2.inRange(hsv, lower_red2, upper_red2)
     red_mask = mask1 + mask2
 
-
     contours, _ = cv2.findContours(red_mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
     for cnt in contours:
-
         if cv2.contourArea(cnt) > 50:
-            
             M = cv2.moments(cnt)
             if M["m00"] != 0:
                 cX = int(M["m10"] / M["m00"])
                 cY = int(M["m01"] / M["m00"])
                 
-                print(f"Red Dot: X={cX}, Y={cY}")
+                print(f"Kırmızı Nokta Tespit Edildi! Merkez Koordinatı: X={cX}, Y={cY}")
                 return (cX, cY)
 
-    print("Couldn't find red dot.")
     return None
 
 if __name__ == "__main__":
-    find_red_dot()
+    print("Kırmızı nokta takibi başlatıldı. Çıkmak için CTRL+C yapabilirsiniz.")
+    
+    # 2. Sürekli çalışması için while döngüsü ekle
+    while True:
+        find_red_dot()
+        time.sleep(0.5)  # İşlemciyi yormamak ve yeni karelerin yazılmasını beklemek için yarım saniye bekle
