@@ -42,7 +42,7 @@ pip install -r requirements.txt
  ctrl + c to exit  
 ```
 
-**Terminal 2 (Coordinate results will get printed to terminal 2)** ♛
+**Terminal 2 (Coordinate results will get printed to terminal 2)** ♕
 
 **NOTE:** Make sure you open the second terminal outside of the pygame window.
 ```
