@@ -12,7 +12,7 @@ Terminal 2: `python ss_analyser.py`
 3) `ss_analyser.py` file analyses the image inside /imgs and finds coordinates of the the circle that has red color.
 
 
-# --Installation--
+# -----Installation-----
 
 
 
@@ -32,7 +32,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-# --Running the Program--
+# -----Running the Program-----
 
 ---
 
