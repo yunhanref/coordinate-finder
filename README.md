@@ -27,8 +27,8 @@ terminal 1:
  python dots.py
 ```
 
-terminal 2 (Coordinate results will get printed to terminal 2)
+Terminal 2 (Coordinate results will get printed to terminal 2)
+NOTE: Make sure you open the second terminal outside of the pygame window.
 ```
-Make sure you open the second terminal outside of the pygame window.
 python ss_analyser.py
 ```
