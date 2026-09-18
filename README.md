@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ---
 
-terminal 1:
+Terminal 1:
 ```
  python dots.py
 ```
