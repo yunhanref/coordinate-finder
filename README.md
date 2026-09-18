@@ -39,6 +39,7 @@ pip install -r requirements.txt
 **Terminal 1:**
 ```
  python dots.py
+ ctrl + c to exit  
 ```
 
 **Terminal 2 (Coordinate results will get printed to terminal 2)**
@@ -46,4 +47,5 @@ pip install -r requirements.txt
 **NOTE:** Make sure you open the second terminal outside of the pygame window.
 ```
 python ss_analyser.py
+ctrl + c to exit
 ```
