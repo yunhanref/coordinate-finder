@@ -1,8 +1,18 @@
 <img width="1280" height="688" alt="pygame_check" src="https://github.com/user-attachments/assets/da3d93e0-a18c-4d16-af6e-871c422f8c8f" />
+
 # How Does It Work?
-1) dots.py file opens a 640x360 `pygame` window. Inside this window three different coloured circle gets drawn in random coordinates.
-2) As dots.py runs, the file ss.py get executed concurrently. This file
+
+Terminal 1: `python dots.py`
+1) `dots.py` file opens a 640x360 pygame window. Inside this window three different coloured circle gets drawn in random coordinates every 2 seconds.
+2) As `dots.py` runs, `screenshot()` function inside the file `ss.py` gets called and takes screenshots of the pygame window every 2 seconds and saves it inside /imgs.
+---
+Terminal 2: `python ss_analyser.py`
+3) `ss_analyser.py` file analyses the image inside /imgs and finds the red dots coordinates.
+
+
 # Installation
+
+
 
 ---
 
