@@ -1,5 +1,7 @@
 <img width="1280" height="688" alt="pygame_check" src="https://github.com/user-attachments/assets/da3d93e0-a18c-4d16-af6e-871c422f8c8f" />
-
+# How Does It Work?
+1) dots.py file opens a 640x360 `pygame` window. Inside this window three different coloured circle gets drawn in random coordinates.
+2) As dots.py runs, the file ss.py get executed concurrently. This file
 # Installation
 
 ---
