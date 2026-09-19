@@ -1,12 +1,11 @@
 import cv2
 import numpy as np
-import time  # 1. Zaman modülünü ekle
+import time
 
 def find_red_dot():
     img = cv2.imread("imgs/pygame_check.png")
     
     if img is None:
-        # Sürekli döngüde dosyanın henüz oluşmadığı anlar olabilir, o yüzden print yerine pass/continue diyebiliriz
         return None
 
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -38,7 +37,6 @@ def find_red_dot():
 if __name__ == "__main__":
     print("Kırmızı nokta takibi başlatıldı. Çıkmak için CTRL+C yapabilirsiniz.")
     
-    # 2. Sürekli çalışması için while döngüsü ekle
     while True:
         find_red_dot()
-        time.sleep(0.5)  # İşlemciyi yormamak ve yeni karelerin yazılmasını beklemek için yarım saniye bekle
+        time.sleep(2)
