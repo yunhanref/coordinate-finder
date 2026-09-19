@@ -29,13 +29,13 @@ def find_red_dot():
                 cX = int(M["m10"] / M["m00"])
                 cY = int(M["m01"] / M["m00"])
                 
-                print(f"Kırmızı Nokta Tespit Edildi! Merkez Koordinatı: X={cX}, Y={cY}")
+                print(f"Red Dot: X={cX}, Y={cY}")
                 return (cX, cY)
 
     return None
 
 if __name__ == "__main__":
-    print("Kırmızı nokta takibi başlatıldı. Çıkmak için CTRL+C yapabilirsiniz.")
+    print("To Exit: CTRL+C ")
     
     while True:
         find_red_dot()
